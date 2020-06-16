@@ -10,6 +10,6 @@ const url string = "https://www.wildes-sh.de/"
 
 func main() {
 	var trekkingSiteURIs []string
-	scraper.Run(url, &trekkingSiteLinks)
+	scraper.Run(url, &trekkingSiteURIs)
 	log.Println(trekkingSiteURIs)
 }
