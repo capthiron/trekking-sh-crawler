@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"log"
+
+	"github.com/capthiron/trekking-sh-crawler/scraper"
+)
+
+const url string = "https://www.wildes-sh.de/"
 
 func main() {
-	fmt.Println("Bugabooo!")
+	var trekkingSiteURIs []string
+	scraper.Run(url, &trekkingSiteLinks)
+	log.Println(trekkingSiteURIs)
 }
